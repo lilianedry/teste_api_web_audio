@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Music Player – Web Audio API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player-card">
+      <div class="cover">
+        <img src="album_image.jpg" alt="Chet Faker - Gold" />
+      </div>
+
+      <p class="song-title">Gold</p>
+      <p class="song-subtitle">Chet Faker</p>
+
+      <div class="progress-wrap" id="progressWrap">
+        <div class="progress-filled" id="progressFilled"></div>
+      </div>
+      <div class="time">
+        <span id="currentTime">0:00</span>
+        <span id="totalTime">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="control-btn" id="prev">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button class="play-btn" id="playPause">
+          <i class="fa-solid fa-play" id="playPauseIcon"></i>
+        </button>
+        <button class="control-btn" id="next">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+
+        <div class="volume-container">
+          <button class="control-btn" id="mute">
+            <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+          </button>
+          <div class="volume-section">
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+          </div>
+        </div>
+      </div>
+
+      <audio id="audio" style="display: none" preload="auto">
+        <source src="Chet Faker - Gold.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

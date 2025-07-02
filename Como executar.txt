@@ -1,0 +1,10 @@
+Orientações gerais como executar o arquivo:
+
+Para visualizar corretamente o projeto, abra-o no Visual Studio Code (VS Code) e utilize a extensão Live Server.
+Siga os passos abaixo:
+
+Abra o projeto no VS Code.
+Certifique-se de que a extensão Live Server está instalada.
+Clique com o botão direito no arquivo index.html.
+Selecione "Open with Live Server" ou "Abrir com Live Server".
+Isso iniciará o projeto em seu navegador padrão.
